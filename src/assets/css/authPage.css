@@ -1,0 +1,58 @@
+@import url('color_scheme.css');
+
+.auth-page-active {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.4);
+}
+
+.auth-page-hidden {
+    display: none;
+}
+
+.login-form-wrapper {
+    position: fixed;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        color: grey;
+    }
+
+    input {
+        height: 35px;
+        border-radius: 5px;
+        border: 1px solid grey;
+        padding-left: 10px;
+    }
+}
+
+.login-form > * {
+    margin: 10px 0 10px;
+}
+
+.submit-form-button {
+    background-color: var(--primary-color-blue);
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+
+.submit-form-button:disabled {
+    background-color: #BBBBBB;
+    cursor: not-allowed;
+}

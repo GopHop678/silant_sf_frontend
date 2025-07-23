@@ -1,0 +1,167 @@
+@import url('color_scheme.css');
+
+.main-page-content {
+    width: 100%;
+    flex: 1;
+}
+
+.client-info {
+    font-size: min(16px, 2.5vw);
+    margin: 20px 50px 0;
+}
+
+.table-entry {
+    font-size: min(26px, 4vw);
+    margin: 0 50px;
+    text-align: center;
+}
+
+.table-tabs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 20px 40px 0;
+
+    @media (max-width: 520px) {
+        font-size: 14px;
+    }
+    @media (max-width: 400px) {
+        font-size: 12px;
+    }
+
+}
+
+.table-tab {
+    cursor: pointer;
+    height: 20px;
+    padding: 20px;
+    min-width: 15vw;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.active {
+    background: var(--primary-color-blue);
+    color: white;
+}
+
+.table-wrapper {
+    margin-bottom: 40px;
+}
+
+.table-scroll-container {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.table-window {
+    overflow-x: auto;
+    border: 3px solid var(--primary-color-blue);
+    width: calc(100% - 43px * 2);
+    margin: 0 40px 0;
+
+    @media (max-width: 750px) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.filter-form {
+    background: var(--primary-color-blue);
+    color: white;
+    width: calc(max(100%, 600px) - 40px * 2);
+    margin: 0 40px 0;
+    border-radius: 10px 10px 0 0;
+
+    @media (max-width: 750px) {
+        width: 100%;
+        margin: 0;
+    }
+
+    label {
+        color: white;
+        width: 40%;
+        font-size: 16px;
+    }
+    select, input {
+        width: 60%;
+    }
+    button {
+        width: 40%;
+    }
+    select, input, button {
+        border-radius: 5px;
+        border: 1px solid grey;
+        height: 25px;
+        align-content: center;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.form-fields-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+        margin: 20px;
+    }
+
+    @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form-fields-wrapper > * {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.table-loading {
+    width: calc(max(100%) - 43px * 2);
+    margin: 0 40px 0;
+    border: 3px solid var(--primary-color-blue);
+    text-align: center;
+}
+
+.table-main {
+    text-align: center;
+    border-spacing: 0;
+    width: 100%;
+
+    @media (max-width: 750px) {
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    td, th {
+        border: 1px solid var(--primary-color-blue);
+        line-height: 1;
+        padding: 5px;
+    }
+
+    tbody > tr:hover {
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.add-new-btn {
+    background: var(--primary-color-blue);
+    display: block;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 40px;
+    /*margin-right: 40px;*/
+    /*margin-left: auto;*/
+    border: none;
+    cursor: pointer;
+    border-radius: 0 0 10px 10px;
+}
+
+.add-new-btn:hover {
+    color: red;
+}

@@ -1,0 +1,10 @@
+:root {
+    --primary-color-blue: #163E6C;
+    --primary-color-red: #D20A11;
+    --primary-color-white: #EBE6D6;
+}
+
+@font-face {
+    font-family: 'SilantFont';
+    src: url('../fonts/PT-Astra-Sans_Regular.ttf') format('truetype');
+}
