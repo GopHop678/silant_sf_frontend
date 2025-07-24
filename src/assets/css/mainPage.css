@@ -47,24 +47,20 @@
 }
 
 .table-wrapper {
-    margin-bottom: 40px;
-}
-
-.table-scroll-container {
     overflow-x: hidden;
-    max-width: 100%;
-}
-
-.table-window {
-    overflow-x: auto;
-    border: 3px solid var(--primary-color-blue);
-    width: calc(100% - 43px * 2);
-    margin: 0 40px 0;
+    margin: 0 40px;
 
     @media (max-width: 750px) {
         width: 100%;
         margin: 0;
     }
+}
+
+.table-window {
+    overflow-x: auto;
+    border: 3px solid var(--primary-color-blue);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .filter-form {
@@ -130,6 +126,7 @@
     text-align: center;
     border-spacing: 0;
     width: 100%;
+    min-width: 600px;
 
     @media (max-width: 750px) {
         width: 100%;
@@ -155,8 +152,6 @@
     color: white;
     padding: 5px 15px;
     margin-left: 40px;
-    /*margin-right: 40px;*/
-    /*margin-left: auto;*/
     border: none;
     cursor: pointer;
     border-radius: 0 0 10px 10px;

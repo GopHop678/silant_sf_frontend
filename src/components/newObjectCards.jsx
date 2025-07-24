@@ -413,11 +413,11 @@ const NewObjectCard = ({setCurrentPage}) => {
                 </button>
             </div>
 
-            {cardType === 'machine' && <NewMachineForm cardType={cardType}
+            {cardType === 'machines' && <NewMachineForm cardType={cardType}
                                                        setCurrentPage={setCurrentPage} />}
             {cardType === 'maintenance' && <NewMaintenanceForm cardType={cardType}
                                                                setCurrentPage={setCurrentPage} />}
-            {cardType === 'complaint' && <NewComplaintForm cardType={cardType}
+            {cardType === 'complaints' && <NewComplaintForm cardType={cardType}
                                                            setCurrentPage={setCurrentPage}/>}
         </div>
     )

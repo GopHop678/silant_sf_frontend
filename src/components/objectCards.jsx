@@ -613,11 +613,11 @@ const Card = ({clientRole, setCurrentPage}) => {
     const [cardType, setCardType] = useState([]);
 
     let requiredRolesToEdit = [];
-    if (cardType[0] === 'machine') {
+    if (cardType[0] === 'machines') {
         requiredRolesToEdit = ['manager'];
     } else if (cardType[0] === 'maintenance') {
         requiredRolesToEdit = ['client', 'service', 'manager'];
-    } else if (cardType[0] === 'complaint') {
+    } else if (cardType[0] === 'complaints') {
         requiredRolesToEdit = ['service', 'manager'];
     }
 
@@ -644,11 +644,11 @@ const Card = ({clientRole, setCurrentPage}) => {
                                className={editMode ? ('edit-on') : ('edit-off')}>Редактирование</button>}
             </div>
 
-            {cardType[0] === 'machine'
+            {cardType[0] === 'machines'
                 && <MachineCard cardType={cardType} editMode={editMode} setEditMode={setEditMode}/>}
             {cardType[0] === 'maintenance'
                 && <MaintenanceCard cardType={cardType} editMode={editMode} setEditMode={setEditMode}/>}
-            {cardType[0] === 'complaint'
+            {cardType[0] === 'complaints'
                 && <ComplaintCard cardType={cardType} editMode={editMode} setEditMode={setEditMode}/>}
         </div>
     )
