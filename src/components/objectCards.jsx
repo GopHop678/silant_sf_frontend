@@ -210,10 +210,10 @@ const MachineCard = ({cardType, editMode, setEditMode}) => {
                         <span>Модель: </span>
                         <span>{cardData['machine_model']}</span>
                     </div>
-                    <div className='data-block'>
-                        <span>Описание модели: </span>
-                        <span>{cardData['machine_model_description']}</span>
-                    </div>
+                    {/*<div className='data-block'>*/}
+                    {/*    <span>Описание модели: </span>*/}
+                    {/*    <span>{cardData['machine_model_description']}</span>*/}
+                    {/*</div>*/}
                     <div className='data-block'>
                         <span>Модель двигателя: </span>
                         <span>{cardData['engine']}</span>
@@ -222,10 +222,10 @@ const MachineCard = ({cardType, editMode, setEditMode}) => {
                         <span>Зав. № двигателя: </span>
                         <span>{cardData['engine_factory_number']}</span>
                     </div>
-                    <div className='data-block'>
-                        <span>Описание модели двигателя: </span>
-                        <span>{cardData['engine_description']}</span>
-                    </div>
+                    {/*<div className='data-block'>*/}
+                    {/*    <span>Описание модели двигателя: </span>*/}
+                    {/*    <span>{cardData['engine_description']}</span>*/}
+                    {/*</div>*/}
                     <div className='data-block'>
                         <span>Модель трансмиссии: </span>
                         <span>{cardData['transmission']}</span>
@@ -234,10 +234,10 @@ const MachineCard = ({cardType, editMode, setEditMode}) => {
                         <span>Зав. № трансмиссии: </span>
                         <span>{cardData['transmission_factory_number']}</span>
                     </div>
-                    <div className='data-block'>
-                        <span>Описание модели трансмиссии: </span>
-                        <span>{cardData['transmission_description']}</span>
-                    </div>
+                    {/*<div className='data-block'>*/}
+                    {/*    <span>Описание модели трансмиссии: </span>*/}
+                    {/*    <span>{cardData['transmission_description']}</span>*/}
+                    {/*</div>*/}
                     <div className='data-block'>
                         <span>Модель ведущего моста: </span>
                         <span>{cardData['drive_axle']}</span>
@@ -246,10 +246,10 @@ const MachineCard = ({cardType, editMode, setEditMode}) => {
                         <span>Зав. № ведущего моста: </span>
                         <span>{cardData['drive_axle_factory_number']}</span>
                     </div>
-                    <div className='data-block'>
-                        <span>Описание модели ведущего моста: </span>
-                        <span>{cardData['drive_axle_description']}</span>
-                    </div>
+                    {/*<div className='data-block'>*/}
+                    {/*    <span>Описание модели ведущего моста: </span>*/}
+                    {/*    <span>{cardData['drive_axle_description']}</span>*/}
+                    {/*</div>*/}
                     <div className='data-block'>
                         <span>Модель управляющего моста: </span>
                         <span>{cardData['steering_axle']}</span>
@@ -258,10 +258,10 @@ const MachineCard = ({cardType, editMode, setEditMode}) => {
                         <span>Зав. № управляющего моста: </span>
                         <span>{cardData['steering_axle_factory_number']}</span>
                     </div>
-                    <div className='data-block'>
-                        <span>Описание модели управляющего моста: </span>
-                        <span>{cardData['steering_axle_description']}</span>
-                    </div>
+                    {/*<div className='data-block'>*/}
+                    {/*    <span>Описание модели управляющего моста: </span>*/}
+                    {/*    <span>{cardData['steering_axle_description']}</span>*/}
+                    {/*</div>*/}
                     <div className='data-block'>
                         <span>Договор №{cardData['contract_number']} от {cardData['contract_date'] &&
                             cardData['contract_date'].split('-').reverse().join('.')}</span>
@@ -286,10 +286,10 @@ const MachineCard = ({cardType, editMode, setEditMode}) => {
                         <span>Сервисная компания: </span>
                         <span>{cardData['service_company']}</span>
                     </div>
-                    <div className='data-block'>
-                        <span>Описание сервисной компании: </span>
-                        <span>{cardData['service_company_description']}</span>
-                    </div>
+                    {/*<div className='data-block'>*/}
+                    {/*    <span>Описание сервисной компании: </span>*/}
+                    {/*    <span>{cardData['service_company_description']}</span>*/}
+                    {/*</div>*/}
                 </div>
             )}
         </div>
